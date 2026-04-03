@@ -1,5 +1,5 @@
 resource "aws_instance" "ubuntu_instance" {
-  ami = data.aws_ami.letest_ubuntu.id
+  ami = data.aws_ami.ubuntu.id
   instance_type = var.aws_instance
   key_name = var.key_name
 
