@@ -5,7 +5,7 @@ variable "region" {
 }
 variable "aws_instance" {
   type = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 variable "tags" {
   type = map(string)
