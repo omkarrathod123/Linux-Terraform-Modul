@@ -7,7 +7,7 @@ variable "aws_instance" {
   type = string
   default = "t3.micro"
 }
-variable "tags" {
+variable "tags_server" {
   type = map(string)
   default = {
     "Name" = "Ubuntu-24.04"
@@ -18,4 +18,16 @@ variable "tags" {
 variable "key_name" {
   type = string
   default = "Practic"
+}
+variable "cidr_block" {
+  type = string
+  default = "198.162.0.0/16"
+}
+variable "tags_vpc" {
+  type = map(string)
+  default = {
+    "Name" = "linux_cmd"
+    "Environmment" = "Developement"
+    "Owner" = "Omkar Rathod"
+  }
 }
