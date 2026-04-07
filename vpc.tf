@@ -1,5 +1,7 @@
 resource "aws_vpc" "linux_cmd_vpc" {
   cidr_block = var.cidr_block
+
+  tags = var.tags_vpc
 }
 resource "aws_internet_gateway" "linux_cmd_igw" {
   vpc_id = aws_vpc.linux_cmd_vpc.id
