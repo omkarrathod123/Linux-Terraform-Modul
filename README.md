@@ -32,4 +32,8 @@ Terraform .tfvars files are best way to manage variable assignments systematical
 terraform plan -var-file="dev.tfvars"
 ```
 
+## Terraform Autoloading .tfvars File
+
+Teraform can automatically load .tfvars file if they ar named with terraform.tfviles.We can also add names ending in .auto.tfvars to consider or tell to load file automatically.
+
 ---
