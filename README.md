@@ -21,4 +21,15 @@ Below are the essential Terraform commands used for initialization, validation, 
 4. `terraform apply` – Applies the configuration and provisions resources.
 5. `terraform destroy` – Deletes the managed infrastructure.
 
+## Terraform .tfvars File
+
+Terraform .tfvars files are best way to manage variable assignments systematically in Infrastructure as Code (IaC) projects.
+
+1. `Create .tfvars file` - To create a .tfvars file, simply need to define the variables and their values in the file. created file must end with .tfvars extension.
+2. `How to use .tfvars file` - To use a .tfvars file, add command line avg '-var-file="your file name."'.
+3. `Example of .tfvars file` - lets consider file name is dev.tfvars, command will be:
+```sh
+terraform plan -var-file="dev.tfvars"
+```
+
 ---
