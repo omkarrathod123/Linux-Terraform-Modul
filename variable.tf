@@ -6,6 +6,7 @@ variable "region" {
 variable "aws_instance" {
   type = string
   default = "t3.micro"
+  description = "Default instance is t3.micro"
 }
 variable "tags_server" {
   type = map(string)
@@ -18,6 +19,7 @@ variable "tags_server" {
 variable "key_name" {
   type = string
   default = "Practic"
+  description = "Default keyname is Practic"
 }
 variable "cidr_block" {
   type = string
