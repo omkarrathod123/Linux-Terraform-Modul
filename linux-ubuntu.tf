@@ -8,3 +8,7 @@ resource "aws_instance" "ubuntu_instance" {
   tags = var.tags_server
   depends_on = [ aws_security_group.allow_All ]
 }
+output "PubIP" {
+  description = "This variable will show Public Ip Address of server"
+  value = aws_instance.ubuntu_instance.public_ip
+}
