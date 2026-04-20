@@ -18,7 +18,8 @@ resource "aws_route_table" "linux_cmd_public_rt" {
 }
 resource "aws_subnet" "linux_cmd_public_subnet" {
   vpc_id = aws_vpc.linux_cmd_vpc.id
-  cidr_block = "198.162.1.0/24"
+  cidr_block = "192.168.0.0/16"
+  map_public_ip_on_launch = true
 
   tags = var.tags_vpc
 }
