@@ -30,7 +30,7 @@ resource "aws_security_group_rule" "ssh_Ingress_rule" {
   to_port = 65535
   protocol = "22"
   security_group_id = aws_security_group.allow_All.id
-  cidr_blocks = [ aws_vpc.linux_cmd_vpc.cidr_block ]
+  cidr_blocks = [ "0.0.0.0/0" ]
 }
 resource "aws_security_group_rule" "ssh_egress_rule" {
   type = "egress"
@@ -38,5 +38,5 @@ resource "aws_security_group_rule" "ssh_egress_rule" {
   to_port = 0
   protocol = "22"
   security_group_id = aws_security_group.allow_All.id
-  cidr_blocks = [ aws_vpc.linux_cmd_vpc.cidr_block ]
+  cidr_blocks = [ "0.0.0.0/0" ]
 }
