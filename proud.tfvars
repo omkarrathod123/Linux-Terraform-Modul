@@ -1,17 +1,17 @@
 region = "ap-south-1"
-aws_instance = "t3.small"
-key_name = "Practic"
+aws_instance = "t3.large"
+key_name = "Kjf0T6"
 tags_server = {
     "Name" = "Ubuntu-24.04"
-    "Environmment" = "Developement"
+    "Environmment" = "Production"
     "Owner" = "Omkar Rathod"
     "Date" = "08052026"
-    "Day Number" = "2"
+    "Day Number" = "1"
 }
 cidr_block = "192.168.0.0/16"
 tags_vpc = {
   "Name" = "linux-cmd-vpc"
-  "Environment" = "Developement"
+  "Environment" = "Production"
   "Owner" = "omkarrathod123"
   "Date" = "08052026"
 }
