@@ -5,6 +5,8 @@ resource "aws_security_group" "allow_All" {
 
   tags = {
     Name = "Allow-All"
+    Date = "30052026"
+    Owner = "Omkar Rathod"
   }
   depends_on = [ aws_vpc.linux_cmd_vpc ]
 }
