@@ -5,6 +5,7 @@ resource "aws_instance" "ubuntu_instance" {
   subnet_id = aws_subnet.linux_cmd_public_subnet.id
   security_groups = [ aws_security_group.allow_All.id ]
 
+  user_data = file("./install.sh")
   tags = var.tags_server
   depends_on = [ aws_security_group.allow_All ]
 }
