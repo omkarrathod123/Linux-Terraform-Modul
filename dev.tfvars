@@ -5,13 +5,13 @@ tags_server = {
     "Name" = "Ubuntu-24.04"
     "Environmment" = "Developement"
     "Owner" = "Omkar Rathod"
-    "Date" = "08052026"
-    "Day Number" = "2"
+    "Date" = "30052026"
+    "Day Number" = "3"
 }
 cidr_block = "192.168.0.0/16"
 tags_vpc = {
   "Name" = "linux-cmd-vpc"
   "Environment" = "Developement"
   "Owner" = "omkarrathod123"
-  "Date" = "08052026"
+  "Date" = "30052026"
 }

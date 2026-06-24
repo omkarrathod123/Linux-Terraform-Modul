@@ -6,7 +6,7 @@ variable "region" {
 variable "aws_instance" {
   type = string
   default = "t3.micro"
-  description = "Default instance is t3.micro"
+  description = "Default instance is t3.small"
 }
 variable "tags_server" {
   type = map(string)
@@ -24,6 +24,7 @@ variable "key_name" {
 variable "cidr_block" {
   type = string
   default = "198.162.0.0/16"
+  description = "Value of cidr block must be change before publishing it."
 }
 variable "tags_vpc" {
   type = map(string)
