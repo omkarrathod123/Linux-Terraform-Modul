@@ -3,11 +3,7 @@ resource "aws_security_group" "allow_All" {
   description = "Allow Traffing will be allowed"
   vpc_id = aws_vpc.linux_cmd_vpc.id
 
-  tags = {
-    Name = "Allow-All"
-    Date = "30052026"
-    Owner = "Omkar Rathod"
-  }
+  tags = var.tags_SG
   depends_on = [ aws_vpc.linux_cmd_vpc ]
 }
 resource "aws_security_group_rule" "allow_Ingress_rule" {

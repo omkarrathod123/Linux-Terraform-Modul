@@ -15,3 +15,8 @@ tags_vpc = {
   "Owner" = "omkarrathod123"
   "Date" = "30052026"
 }
+tags_SG = {
+  "Name" = "Allow-All"
+  "Date" = "30052026"
+  "Owner" = "Omkar Rathod"
+}

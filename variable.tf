@@ -16,6 +16,14 @@ variable "tags_server" {
     "Owner" = "Omkar Rathod"
   }
 }
+variable "tags_SG" {
+  type = map(string)
+  default = {
+    "Name" = "Allow-All"
+    "Date" = "30052026"
+    "Owner" = "Omkar Rathod"
+  }
+}
 variable "key_name" {
   type = string
   default = "Practic"
